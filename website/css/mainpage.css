@@ -1,0 +1,45 @@
+:root{
+    --main_font: 'Lato', sans-serif;
+    --second_font: 'Masqualero', sans-serif;
+    --yellow: #EDE94B;
+    --red : #EF4050;
+    --darkblue: #004865;
+    --lightblue: #00708B;
+    --orange: #F26522;
+    --white_space: 2rem;
+}
+
+.video_part > video{
+    background-color: teal;
+    width: 100vw;
+    height: 56.5vw;
+    margin-top: 1rem;
+}
+@media only screen and (min-width: 650px){
+    .video_part{
+        display: flex;
+        margin-top: 100px
+    }
+    .video_part > video{
+        width: 45vw;
+        height: 25vw;
+        margin: 2rem;
+    }
+    .video_part > article{
+        margin-top: 4rem;
+        width: 50%;
+    }
+    .video_part > article > p{
+        font-size: 15px;
+    }
+    .howCanbig{
+     margin-bottom: 1rem;   
+    }
+    .cafres{
+        display: flex;
+        justify-content: space-around;
+    }
+    .cafres >article{
+        width: 40vw;
+    }
+}

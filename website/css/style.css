@@ -1,0 +1,372 @@
+:root{
+    --main_font: 'Lato', sans-serif;
+    --second_font: 'Masqualero', sans-serif;
+    --yellow: #EDE94B;
+    --red : #EF4050;
+    --darkblue: #004865;
+    --lightblue: #00708B;
+    --orange: #F26522;
+    --white_space: 1rem;
+}
+*{
+    box-sizing: border-box;
+    font-family: var(--main_font);
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.background{
+    /* width: 100vw;
+    height: 75vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/background.png);
+    z-index: 0; */
+}
+.top_nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    z-index: 4;
+    
+}
+.top_nav > ul{
+    display: none;
+}
+.top_nav > div >.burger {
+    margin: 10px 10px 10px auto;
+    width: 35px;
+    height: 100%;
+    padding:5px;
+    z-index : 5;
+    
+}
+.burger_men{
+    display: flex;
+}
+.top_nav > .burger_men > a{
+    margin-left: 45%;
+}
+.top_nav > .burger_men > a img{
+    height: 55px;
+    width: auto;
+}
+.top_nav >div > .burger > div{
+    width: 100%;
+    height: 5px;
+    margin: 5px;
+    border-radius: 5px 5px;
+    background-color: var(--darkblue);
+}
+.greenishlogonav{
+    display: none;
+}
+.bottom_nav{
+    background-color: var(--darkblue);
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    z-index: 5;
+    height: 70px;
+    width: 100vw;
+}
+.bottom_nav > ul{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 0;
+}
+.bottom_nav > ul > li {
+    list-style: none;
+    display: grid;
+    justify-content: space-around;
+    height: 55px;
+    width: 20vw;
+}
+.bottom_nav > ul > li > img{
+    height: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bottom_nav > ul > li > a{
+    font-size: .6rem;
+    color: var(--yellow);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+.greenishlogo{
+    margin-top: 65px;
+    margin-left: 25%;
+    position: relative;
+    justify-content: center;
+    width: auto;
+    height: 50px;
+}
+article{
+    padding: var(--white_space);
+}
+
+.howCan, .mainheader >h4{
+    font-size: .75rem;
+    color: var(--orange);
+}
+.howCanbig, .mainheader > h3{
+    font-family: var(--second_font);
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 1.7rem;
+    color: var(--red);
+    margin-top: .5rem;
+}
+.howCanbig > i {
+    font-family: var(--second_font);
+    font-weight: lighter;
+}
+
+.cafes > .header , .tipstrics >.header{
+    background-color: var(--darkblue);
+    padding: .5rem 1rem 1.5rem 1rem;
+}
+.cafes > .header >h1 , .tipstrics >.header >h1{
+    font-family: var(--second_font);
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.cafes > .header > div{
+    display: flex;
+    justify-content: center;
+}
+.cafes > .header > div > img{
+    height: 20px;
+}
+.cafes > .header > div > h2{
+    color: var(--yellow);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0 5px;
+}
+.cafres > article {
+    padding:1rem 0 ;
+}
+.cafres > article > h1{
+    font-family: var(--second_font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--red);
+    margin-top: .5rem;
+}
+.restaurant{
+    background-color: var(--yellow);
+    display: grid;
+    grid-template-columns: 15% 35% 50%;
+    grid-template-rows: 1fr 1fr;
+    padding: .2rem;
+    width: 100%;
+    margin: 1rem 0; 
+}
+
+.restaurant > h2{
+    grid-column: 1 / span 2;
+    grid-row: 0/ span 1;
+    color: var(--darkblue);
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+.restaurant > h3{
+    grid-column: 1 / span 1;
+    grid-row: 2/ span 1;
+    color: var(--lightblue);
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+.restaurant > h4{
+    grid-column: 2 / span 1;
+    grid-row: 2/ span 1;
+    color: var(--lightblue);
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+.restaurant > p{
+    grid-column: 3/ span 1;
+    grid-row: 1/ span 2;
+    color: var(--lightblue);
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 0;
+}
+.tipstrics > div > article{
+    padding: 1rem 0;
+    height: 100vw;
+}
+.tipstrics >div > article > div{
+    height: 80vw;
+    width: 80vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: navy;
+}
+.tipstrics >div> article > h1{
+    position: relative;
+    font-family: var(--second_font);
+    color: white;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold; 
+    z-index: 3;
+    top: -30vw;
+}
+.tipstrics >div> article > h2{
+    position: relative;
+    color: white;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold; 
+    z-index: 3;
+    top: -30vw;
+}
+.eventdescription{
+    background-color: var(--yellow);
+    text-decoration: none;
+    margin-top: 0;
+    padding: var(--white_space);
+    margin-bottom: 100px;
+}
+.eventdescription >h1{
+    font-family: var(--second_font);
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--darkblue);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.eventdescription > h2{
+    color: var(--lightblue);
+    margin-top: .1rem;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.eventdescription > h3{
+    color: var(--lightblue);
+    margin-top: .1rem;
+}
+.event > div.pic{
+    width: 100%;
+    height: 55vw;
+    background-color: rgb(17, 9, 11);
+    overflow: hidden;
+}
+
+.event > div.pic > img{
+    height: 100%;
+    width: auto;
+}
+.joinbutton{
+    text-align: center;
+    padding: .5rem;
+    background-color: var(--red);
+    color: white;
+    text-decoration: none;
+    border-radius: 2rem;
+    width: auto;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 650px){
+    .top_nav{
+        display: flex;
+        width: 100vw;
+    }
+    .top_nav > ul{
+        width: 100%;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+    }
+    .top_nav > ul > li >a{
+        font-size: .75rem;
+        text-decoration: none;
+        color: var(--darkblue);
+    }
+    .top_nav > ul > li >a >img{
+        height: 60px;
+        width: auto;
+        margin-top: -1rem;
+    }
+    .nav_dn_button{
+        background-color: var(--yellow);
+        border-radius: 1rem 1rem;
+        color: white;
+        padding: 0px 5px;
+        margin-bottom: -5px;
+    }
+    .burger_men{
+        display: none;
+    }
+    .bottom_nav{
+        top: 60px;
+        height: 40px;
+        width: 100vw;
+        display: flex;
+    }
+    .greenishlogonav{
+        display: block;
+    }
+    .background{
+     width: 100vw;
+    height: 75vw;
+    position: absolute;
+    top: 0px;
+    margin:0;
+    right: -8rem;
+    background-repeat: no-repeat;
+    background-image: url(../images/background.png);
+    z-index: -1;
+    }
+    .greenishlogo{
+        display: none;
+    }
+    .bottom_nav > ul{
+        display: flex;
+        margin-left: auto;
+        width: auto;
+    }
+    .bottom_nav > ul > li{
+        width: auto;
+        margin-right: 1rem;
+    }
+    .bottom_nav > ul >li >a{
+        font-size: 1rem;
+        font-weight: lighter;
+        
+    }
+    .bottom_nav > ul >li > img{
+        display: none;
+    }
+    .mainheader{
+        margin-top: 100px;
+    }
+
+}

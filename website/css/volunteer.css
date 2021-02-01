@@ -1,0 +1,13 @@
+@media only screen and (min-width: 650px){
+    .events{
+        display: flex;
+        justify-content: space-around;
+    }
+    .event{
+        width: 40vw;
+        height: auto;
+    }
+    .event > div.pic{
+        height: 10rem;
+    }
+}
